@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(-45deg, #1e3c72, #2a5298, #89f7fe, #66a6ff);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.Box {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    padding: 30px;
+    border-radius: 20px;
+    width: 200%;
+    max-width: 400px;
+    color: white;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.search input {
+    flex: 1;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+}
+
+.search button {
+    border: none;
+    background-color: #ffffff55;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    outline: 2px solid #ffffff88;
+
+}
+
+.search button:hover {
+    background-color: #ffffff88;
+}
+
+.weather {
+    text-align: center;
+}
+
+.weather-icon {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.temp {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.city {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 0 10px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.col img {
+    width: 40px;
+}
+
+.col p:first-child {
+    font-weight: bold;
+    margin: 0;
+}
+
+.col p:last-child {
+    margin: 0;
+    font-size: 14px;
+    color: #eee;
+}
+
+.search button:active {
+    transform: scale(0.95);
+    background-color: #ffffffaa;
+}
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather-icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
